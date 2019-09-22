@@ -4,7 +4,7 @@ set -e
 PUSH=$1
 
 if [ -z "${DOCKER_REPO_NAME}" ]; then
-	export DOCKER_REPO_NAME=gulli/cicdw-myip-infrastructure
+	export DOCKER_REPO_NAME=$DOCKER_USER/cicdw-myip-infrastructure
 	echo "WARNING: Using default docker repo name $DOCKER_REPO_NAME"
 fi
 
